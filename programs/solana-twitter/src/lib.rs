@@ -21,3 +21,5 @@ pub struct Tweet {
     pub topic: String,
     pub content: String,
 }
+
+const DISCRIMINATOR_LENGTH: usize = 8;
