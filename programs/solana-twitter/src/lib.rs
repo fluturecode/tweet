@@ -12,7 +12,11 @@ pub mod solana_twitter {
 }
 
 #[derive(Accounts)]
-pub struct Initialize {}
+pub struct SendTweet<'info> {
+    pub tweet: Account<'info, Tweet>,
+    pub author: Signer<'info>,
+    pub system_program: AccountInfo<'info>,
+}
 
 #[account]
 pub struct Tweet {
