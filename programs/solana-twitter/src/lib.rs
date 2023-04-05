@@ -7,7 +7,7 @@ declare_id!("B6vGDhganemog1R3f98vCj3ZYzzg1gMHeafgsCsB2mPY");
 pub mod solana_twitter {
     use super::*;
 
-    pub fn initialize(ctx: Context<SendTweet>) -> Result<()> {
+    pub fn send_tweet(ctx: Context<SendTweet>, topic: String, content: String) -> ProgramResult {
         Ok(())
     }
 }
